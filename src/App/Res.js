@@ -8,14 +8,14 @@ const Res = ({res, cancelRes}) => {
     const targetId = event.target.closest('.res').id
     cancelRes(targetId)
   }
-
+  console.log(res)
   return (
     <div className="res" id={res.id} key={res.id} >
       <h2 className="name">{res.name}</h2>
       <p className="date">{res.date}</p>
       <p className="time">{res.time}</p>
-      <p className="num">{res.num}</p>
-      <button type="button" onClick={cancel}>Cancel</button>
+      <p className="num">Number of Guests:{res.number}</p>
+      <button className="cancel-button" type="button" onClick={cancel}>Cancel</button>
     </div>
   )
 }
