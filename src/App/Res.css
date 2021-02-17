@@ -1,8 +1,9 @@
 .res {
-  border: 2px solid #008080;
+  border: 5px solid #008080;
   background-color: white;
-  border-radius: 5px;
-  padding: 1.5vw;
+  border-radius: 20px;
+  padding: 3vw;
+  color:  #008080;
 }
 
 .cancel-button {
@@ -10,4 +11,5 @@
   background-color: #008080;
   color: white;
   font-weight: 600;
+  width: 90%;
 }
