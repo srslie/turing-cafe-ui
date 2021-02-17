@@ -39,7 +39,7 @@ class Form extends Component {
         <label for="num-input"></label>
         <input className="num-input" type="number" placeholder="2" min="1" max="20" value={this.state.numInput} onChange={this.handleChange} required></input>
 
-        <button type="submit">Make Reservation</button>
+        <button className="form-button" type="submit">Make Reservation</button>
       </form>
     )
   }
