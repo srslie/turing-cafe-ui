@@ -58,32 +58,32 @@ class App extends Component {
       })
   }
 
-  // postRes = (body) => {
-  //   const settings = {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json'
-  //     },
-  //     body: JSON.stringify({
-  //       name: body.name, 
-  //       date: body.date, 
-  //       time: body.time, 
-  //       number: body.number
-  //     })
-  //   }
-  //   return Promise.resolve(fetch('http://localhost:3001/api/v1/reservations'), settings)
-  //   .then((response) => {
-  //     console.log('POST RESPONSE', response)
-  //     response.json()
-  //   })
-  //   .catch(error => {
-  //     this.setState({
-  //       error: 'Sorry, error making reservation, please try later!'
-  //     })
-  //     console.error('API ERROR', error)
-  //     throw new Error(error)
-  //   })
-  // }
+  postRes = (body) => {
+    const settings = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: body.name, 
+        date: body.date, 
+        time: body.time, 
+        number: body.number
+      })
+    }
+    return Promise.resolve(fetch('http://localhost:3001/api/v1/reservations'), settings)
+    .then((response) => {
+      console.log('POST RESPONSE', response)
+      response.json()
+    })
+    .catch(error => {
+      this.setState({
+        error: 'Sorry, error making reservation, please try later!'
+      })
+      console.error('API ERROR', error)
+      throw new Error(error)
+    })
+  }
 
   render = () => {
     return (
