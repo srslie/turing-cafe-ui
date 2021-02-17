@@ -1,37 +1,10 @@
 ## Turing Cafe - Reservation Portal
 
-This application was built with `create-react-app`.
+A React App that displays the current reservations for the Turing Cafe!
 
-### Set Up
-
-Clone down this repo.
-
-On GitHub, create a new, empty repository and name it something like 'turing-cafe-fe'.
-
-By the end of the assessment, update the current remote (origin) and point it at the new URL of the repository you just created on GitHub. You can read how to do this [here](https://help.github.com/en/articles/changing-a-remotes-url). Once you've updated the remote, you should be able to push up to that repo after you have at least one commit.
-
-Run `npm install` to install dependencies for the repo.
-
-Run `npm start` to start up your React server.
-
-Run `npm run cypress` to start up the Cypress testing server.
-
-### Expectations / Rules
-
-Build a React App that displays the current reservations for the Turing Cafe!
-
-You will have 3 hours to build this application.
+I had 3 hours to build this application. This is the midMod for Mod 3. 
 
 ![turing-cafe-screenshot](https://user-images.githubusercontent.com/20754511/57332366-dbd59d00-70d7-11e9-9de6-967d7aca98a4.png)
-
-We do want to see good commit habits - atomic commits that log small, focused changesets. Don't worry about creating GitHub issues, though.
-
-### Iteration 0
-
-Pull down the [API repo](https://github.com/turingschool-examples/turing-cafe-api). Set up instructions are in that repository's README.
-
-Do *not* nest this inside your front-end repository.
-
 ### Iteration 1
 
 Get all existing reservations on page load and display them on the DOM.
