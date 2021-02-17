@@ -3,13 +3,12 @@ import './Form.css';
 
 class Form extends Component {
   constructor(props){
-    console.log('PROPS', props)
     super();
     this.state = {
-      nameInput: null,
-      dateInput: null,
-      timeInput: null,
-      numInput: null,
+      nameInput: '',
+      dateInput: '',
+      timeInput: '',
+      numInput: '',
       postRes: props.postRes
     }
     this.handleChange = this.handleChange.bind(this)
