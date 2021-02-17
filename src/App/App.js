@@ -71,10 +71,15 @@ class App extends Component {
         number: body.number
       })
     }
-    return Promise.resolve(fetch('http://localhost:3001/api/v1/reservations'), settings)
+    return Promise.resolve(fetch('http://localhost:3001/api/v1/reservations', settings))
     .then((response) => {
-      console.log('POST RESPONSE', response)
-      response.json()
+      return response.json()
+    })
+    .then(reservation => {
+      console.log('hi', reservation)
+      this.setState({
+        reservations: this.state.reservations.push(reservation)
+      })
     })
     .catch(error => {
       this.setState({
