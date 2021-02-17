@@ -8,7 +8,7 @@ const Res = ({res, cancelRes}) => {
     const targetId = event.target.closest('.res').id
     cancelRes(targetId)
   }
-  console.log(res)
+
   return (
     <div className="res" id={res.id} key={res.id} >
       <h2 className="name">{res.name}</h2>

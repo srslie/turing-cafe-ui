@@ -1,8 +1,7 @@
 .reservations {
   position: absolute;
   top: 30vh;
-  display: grid;
-  grid-template-columns: 15% 15% 15% 15% 15%;
-  grid-column-gap: 2vw;
-  justify-content: center;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
 }

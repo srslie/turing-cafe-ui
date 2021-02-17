@@ -3,7 +3,6 @@ import './Reservations.css';
 import Res from './Res'
 
 const Reservations = ({reservations, cancelRes}) => {
-  console.log('WHAT', reservations)
   return (
     <div className="reservations" key={Date.now()}>
       {reservations.map(reservation => <Res res={reservation} cancelRes={cancelRes} key={reservation.id}/>)}
