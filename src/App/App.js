@@ -76,9 +76,9 @@ class App extends Component {
       return response.json()
     })
     .then(reservation => {
-      console.log('hi', reservation)
+      console.log('hi', [...this.state.reservations, reservation])
       this.setState({
-        reservations: this.state.reservations.push(reservation)
+        reservations: [...this.state.reservations, reservation]
       })
     })
     .catch(error => {
